@@ -1,0 +1,14 @@
+{% block content %}
+<body class="">
+    <div class="">
+    <div class="">
+        <h2>Login</h2>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% block content %}
+<body class="login-page">
+    <div class="">
+    <div class="">
+        <h2>Register</h2>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ custom_user_form.as_p }}
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    </div>
+</body>
+{% endblock %}

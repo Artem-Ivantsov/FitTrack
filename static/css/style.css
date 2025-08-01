@@ -1,0 +1,251 @@
+/* ========== Main menu ========== */
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff73;
+  margin-right: 20px;
+  font-family: sans-serif;
+}
+
+/* ========== Second Menu ========== */
+
+.second_menu {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  background-color: #00dd63;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.second_menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.second_menu a:hover {
+  background-color: #00cc6d;
+}
+
+/* ==========  SubMenu ========== */
+
+.submenu {
+  position: fixed;
+  top: 114px; 
+  left: 0;
+  width: 100%;
+  background-color: #00cc6d;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.submenu a:hover {
+  background-color: #008c3a;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+}
+
+#content-main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.clear {
+  clear: both;
+}
+
+.homepage-container {
+    padding: 40px;
+    text-align: center;
+}
+
+.dashboard-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* main/home.html */
+
+.dash-card {
+    background-color: #f0fdf4;
+    border: 1px solid #b2f5ea;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.dash-card:hover {
+    background-color: #c8facc;
+    transform: translateY(-2px);
+}
+
+.quote-block {
+    margin-top: 800px;
+    font-style: italic;
+    color: #555;
+}
+
+.quote-block span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+.homepage-container {
+    margin-top: 100px;
+
+}
+
+.footer {
+    background-color: #008c3a;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: px;
+}
+
+.footer .footer-content {
+    max-width: 1200px;
+    margin:  auto;
+    
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #3498db;
+}

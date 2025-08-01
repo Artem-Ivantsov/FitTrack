@@ -1,0 +1,12 @@
+
+<h2>Дневник питания</h2>
+<ul>
+    {% for item in selections %}
+        <li>{{ item.food.name }} — {{ item.food.calories }} ккал, Б: {{ item.food.protein }} / Ж: {{ item.food.fat }} / У: {{ item.food.carbs }}</li>
+    {% empty %}
+        <li>Вы пока ничего не выбрали.</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'special_menu' %}">Назад к выбору блюд</a>  
+<a href="/">Главная</a>
+

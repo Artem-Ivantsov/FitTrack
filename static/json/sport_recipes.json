@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Steamed Chicken Breast with Broccoli",
+    "calories": 220,
+    "protein": 35,
+    "fat": 4,
+    "carbs": 10
+  },
+  {
+    "name": "Egg White Omelette with Vegetables",
+    "calories": 180,
+    "protein": 28,
+    "fat": 3,
+    "carbs": 7
+  },
+  {
+    "name": "Buckwheat with Tuna",
+    "calories": 310,
+    "protein": 32,
+    "fat": 6,
+    "carbs": 28
+  },
+  {
+    "name": "Baked Cod with Cauliflower",
+    "calories": 250,
+    "protein": 30,
+    "fat": 5,
+    "carbs": 10
+  },
+  {
+    "name": "Turkey with Quinoa and Spinach",
+    "calories": 350,
+    "protein": 40,
+    "fat": 7,
+    "carbs": 25
+  },
+  {
+    "name": "Chicken Salad with Greens",
+    "calories": 190,
+    "protein": 27,
+    "fat": 4,
+    "carbs": 8
+  },
+  {
+    "name": "Baked Salmon with Green Beans",
+    "calories": 330,
+    "protein": 36,
+    "fat": 8,
+    "carbs": 12
+  },
+  {
+    "name": "Oatmeal with Protein Powder",
+    "calories": 300,
+    "protein": 30,
+    "fat": 4,
+    "carbs": 35
+  },
+  {
+    "name": "Grilled Chicken with Cucumber Salad",
+    "calories": 210,
+    "protein": 34,
+    "fat": 3,
+    "carbs": 6
+  },
+  {
+    "name": "Cottage Cheese with Berries",
+    "calories": 200,
+    "protein": 22,
+    "fat": 5,
+    "carbs": 10
+  },
+  {
+    "name": "Lean Beef Stir Fry with Vegetables",
+    "calories": 340,
+    "protein": 38,
+    "fat": 9,
+    "carbs": 15
+  },
+  {
+    "name": "Grilled Shrimp with Brown Rice",
+    "calories": 290,
+    "protein": 32,
+    "fat": 5,
+    "carbs": 30
+  },
+  {
+    "name": "Lentil Soup with Chicken",
+    "calories": 270,
+    "protein": 29,
+    "fat": 4,
+    "carbs": 20
+  },
+  {
+    "name": "Turkey Meatballs with Zucchini",
+    "calories": 310,
+    "protein": 34,
+    "fat": 7,
+    "carbs": 12
+  },
+  {
+    "name": "Salmon Quinoa Bowl",
+    "calories": 360,
+    "protein": 33,
+    "fat": 10,
+    "carbs": 25
+  },
+  {
+    "name": "Tuna Salad with Olive Oil",
+    "calories": 280,
+    "protein": 30,
+    "fat": 8,
+    "carbs": 5
+  },
+  {
+    "name": "Grilled Chicken with Sweet Potato",
+    "calories": 330,
+    "protein": 36,
+    "fat": 6,
+    "carbs": 28
+  },
+  {
+    "name": "Tofu with Stir Fried Vegetables",
+    "calories": 270,
+    "protein": 24,
+    "fat": 9,
+    "carbs": 15
+  },
+  {
+    "name": "Egg and Avocado Toast",
+    "calories": 310,
+    "protein": 20,
+    "fat": 15,
+    "carbs": 25
+  },
+  {
+    "name": "Boiled Eggs with Spinach",
+    "calories": 250,
+    "protein": 22,
+    "fat": 10,
+    "carbs": 5
+  }
+]

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Спортивные рецепты</title>
+</head>
+<body>
+    <h1>Спортивные рецепты</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li>
+                <strong>{{ recipe.name }}</strong> <br>
+                Calories: {{ recipe.calories }} kcal |
+                Protein: {{ recipe.protein }}g |
+                Fat: {{ recipe.fat }}g |
+                Carbs: {{ recipe.carbs }}g
+            </li>
+        {% endfor %}
+    </ul>
+
+<a href="/">Главная</a>
+
+</body>
+</html>

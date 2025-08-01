@@ -1,0 +1,11 @@
+<h2>Выберите блюдо</h2>
+<form method="post">
+    {% csrf_token %}
+    <select name="food_id">
+        {% for food in foods %}
+            <option value="{{ food.id }}">{{ food.name }} ({{ food.calories }} ккал)</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Добавить</button>
+</form>
+<a href="{% url 'my_selection' %}">Мои блюда</a>

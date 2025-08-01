@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Видео упражнения</title>
+    <style>
+        video {
+            margin: 20px 0;
+            display: block;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список видео упражнений</h1>
+
+    {% for url in video_urls %}
+        <video width="640" height="360" controls>
+            <source src="{{ url }}" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    {% empty %}
+        <p>Нет доступных видео.</p>
+    {% endfor %}
+</body>
+</html>

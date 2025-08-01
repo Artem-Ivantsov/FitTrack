@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Header -->
+  <div class="menu">
+    <div class="logo">FitTrack</div>
+    {% if user.is_authenticated %}
+      <span>Привет, <strong>{{ user.username }}</strong></span>
+    {% else %}
+      <span>Привет, Гость</span>
+    {% endif %}
+    <div>
+      <a href="#"><i class="fa-solid fa-envelope"></i> 0</a>
+      <a href="#"><i class="fa-solid fa-user"></i> 0</a>
+      <a href="{% url 'help' %}">Помощь</a>
+      {% if user.is_authenticated %}
+        <a href="{% url 'settings' %}">Настройки</a>
+        <a href="{% url 'logout' %}">Выйти</a>
+      {% else %}
+        <a href="{% url 'login' %}">Войти</a>
+        <a href="{% url 'register' %}">Регистрация</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="second_menu">
+    <a href="/" data-section="home">Главная</a>
+    <a href="#" data-section="food">Еда</a>
+    <a href="#" data-section="exercises">Упражнения</a>
+    <a href="#" data-section="reports">Отчеты</a>
+    <a href="https://community.myfitnesspal.com/ru/categories">Сообщество</a>
+    <a href="#" data-section="premium">Премиум</a>
+  </div>
+
+  {% if user.is_authenticated %}
+    <div class="submenu" id="submenu">
+      <div class="submenu-content" data-content="home">
+        <a href="#">Цели</a>
+        <a href="#">Профиль</a>
+      </div>
+
+      <div class="submenu-content" data-content="food" style="display: none;">
+        <a href="{% url 'my_selection' %}">Дневник питания</a>
+        <a href="{% url 'special_menu' %}">Список еды</a>
+        <a href="{% url 'sport_recipes_view' %}">Рецепты</a>
+        <a href="{% url 'my_dishes'%}">Мои блюда</a>
+        <a href="#">Настройки</a>
+      </div>
+
+      <div class="submenu-content" data-content="exercises" style="display: none;">
+        <a href="{% url 'video_gallery' %}">Видео уроки</a>
+        <a href="exercises/">Список упражнение</a>
+        <a href="exercises/my_exercises/">Мои упражнение</a>
+      </div>
+
+      <div class="submenu-content" data-content="reports" style="display: none;">
+        <a href="#">Графики</a>
+        <a href="{% url 'reports' %}">Экспорт данных</a>
+        <a href="#">История веса</a>
+        <a href="{% url 'update_weight' %}">Изменить вес</a>
+      </div>
+
+      <div class="submenu-content" data-content="premium" style="display: none;">
+        <a href="#">Функции премиум</a>
+        <a href="#">Подписка</a>
+      </div>
+    </div>
+  {% endif %}
+
+    <div class="quote-block">
+        <blockquote>
+            "Сильное тело — это результат слабых оправданий."  
+            <span>— Неизвестный спортсмен</span>
+        </blockquote>
+    </div>
+
+
+    <footer class="footer">
+<div class="footer-content">
+    <p>© 2025 FitTrack. All rights reserved.</p>
+    <nav class="footer-nav">
+    <ul>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+    </ul>
+    </nav>
+</div>
+</footer>
+
+
+  {% block content %}{% endblock %}
+
+  <script src="{% static 'js/submenu.js' %}"></script>
+</body>
+</html>
+

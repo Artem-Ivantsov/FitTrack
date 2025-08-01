@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Упражнения</title>
+</head>
+<body>
+    <h1>Упражнения</h1>
+    <ul>
+        {% for exercise in exercises %}
+            <li>
+                <strong>{{ exercise.name }}</strong> <br>
+                Muscle_group: {{ exercise.muscle_group }} |
+                Equipment: {{ exercise.equipment }} |
+                Type: {{ exercise.type }} |
+            </li>
+        {% endfor %}
+    </ul>
+
+<a href="/">Главная</a>
+
+</body>
+</html>

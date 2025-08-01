@@ -1,0 +1,22 @@
+
+<h1>Добавить блюдо</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сохранить блюдо</button>
+</form>
+
+<h2>Мои блюда:</h2>
+<ul>
+    {% for dish in dishes %}
+        <li>
+            <strong>{{ dish.name }}</strong> — {{ dish.calories }} ккал |
+            Б: {{ dish.protein }}г | Ж: {{ dish.fat }}г | У: {{ dish.carbs }}г
+        </li>
+    {% empty %}
+        <li>Пока нет добавленных блюд.</li>
+    {% endfor %}
+</ul>
+
+<a href="/">Главная</a>
+

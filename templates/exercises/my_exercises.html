@@ -1,0 +1,21 @@
+<h1>Добавить упражнение</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Сохранить упражнение</button>
+</form>
+
+<h2>Мои упражнения:</h2>
+<ul>
+    {% for exercise in exercises %}
+        <li>
+            <strong>{{ exercise.name }}</strong> Группа мышц: {{ exercise.muscle_group }}  |
+            Снаряжения: {{ exercise.equipment }} | Тип упражнения: {{ exercise.type }}
+        </li>
+    {% empty %}
+        <li>Пока нет добавленных упражнений.</li>
+    {% endfor %}
+</ul>
+
+<a href="/">Главная</a>
+
