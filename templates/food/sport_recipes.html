@@ -1,4 +1,9 @@
-<html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 <head>
     <title>Спортивные рецепты</title>
 </head>
@@ -17,6 +22,6 @@
     </ul>
 
 <a href="/">Главная</a>
-
 </body>
-</html>
+
+{% endblock %}

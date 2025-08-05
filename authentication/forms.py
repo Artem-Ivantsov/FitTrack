@@ -17,10 +17,3 @@ class CustomUserForm(UserCreationForm):
             field.help_text = None
         
 
-class WeightUpdateForm(forms.ModelForm):
-    class Meta:
-        model = CustomUser
-        fields = ['weight']
-        widgets = {
-            'weight': forms.NumberInput(attrs={'step': '0.1', 'placeholder': 'Введите ваш вес (кг)'}),
-        }

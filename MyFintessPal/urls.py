@@ -28,8 +28,6 @@ urlpatterns = [
     path('account/', include("settings.urls")),
     path('authentication/', include("authentication.urls")),
     path('user_profile/', include("user_profile.urls")),
-    #path('meal_calculator/', include("meal_calculator.urls")),
-    #path('', include("recipes.urls")),
-    #path('my_dishes/', include('my_dishes.urls')),
+    path('weight/', include('weight.urls')),
     path('exercises/', include('exercises.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -8,3 +8,9 @@ def help(request):
 
 def report(request):
     return render(request,("help/exports.html"))
+
+def privacy_policy(request):
+    return render(request,("help/privacy_policy.html"))
+
+def privacy_policy_full(request):
+    return render(request,("help/privacy_policy_full.html"))

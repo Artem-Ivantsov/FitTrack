@@ -1,21 +1,23 @@
-<html>
-<head>
-    <title>Упражнения</title>
-</head>
-<body>
-    <h1>Упражнения</h1>
-    <ul>
-        {% for exercise in exercises %}
-            <li>
-                <strong>{{ exercise.name }}</strong> <br>
-                Muscle_group: {{ exercise.muscle_group }} |
-                Equipment: {{ exercise.equipment }} |
-                Type: {{ exercise.type }} |
-            </li>
-        {% endfor %}
-    </ul>
+{% extends 'base.html' %}
+{% load static %}
 
-<a href="/">Главная</a>
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-</body>
-</html>
+<div class="exercise-container">
+    <h1>Список упражнений</h1>
+</div>
+
+<div class="exercise-list">
+    {% for exercise in exercises %}
+        <div class="exercise-card">
+            <strong>{{ exercise.name }}</strong><br>
+            Группа мышц: {{ exercise.muscle_group }}<br>
+            Снаряжения: {{ exercise.equipment }}<br>
+            Тип: {{ exercise.type }}
+        </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

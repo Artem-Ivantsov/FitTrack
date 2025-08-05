@@ -1,25 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Видео упражнения</title>
-    <style>
-        video {
-            margin: 20px 0;
-            display: block;
-            max-width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <h1>Список видео упражнений</h1>
+{% extends 'base.html' %}
+{% load static %}
 
-    {% for url in video_urls %}
-        <video width="640" height="360" controls>
-            <source src="{{ url }}" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="video-container">
+    <h1>Список видео упражнений</h1>
+</div>
+
+<div class="video-grid">
+    {% for url in page_obj %}
+        <div class="video-card">
+            <video controls>
+                <source src="{{ url }}" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
     {% empty %}
         <p>Нет доступных видео.</p>
     {% endfor %}
-</body>
-</html>
+</div>
+
+<!-- Пагинация -->
+<div class="pagination">
+    <span class="page-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">« Первая</a>
+            <a href="?page={{ page_obj.previous_page_number }}">‹ Предыдущая</a>
+        {% endif %}
+
+        <span class="current">
+            Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">Следующая ›</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">Последняя »</a>
+        {% endif %}
+    </span>
+</div>
+{% endblock %}

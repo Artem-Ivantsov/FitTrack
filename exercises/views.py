@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Exercise, Useful_Materials
 from .forms import ExercisesForm
 from django.conf import settings
+from django.core.paginator import Paginator
 
 def sport_exercises_view(request):
     exercise = Exercise.objects.all()
@@ -32,7 +33,10 @@ def my_exercises_view(request):
 def video_gallery(request):
     folder_path = os.path.join(settings.MEDIA_ROOT, 'exercise_videos')
     file_names = [f for f in os.listdir(folder_path) if f.endswith('.mp4')]
-
     video_urls = [f"{settings.MEDIA_URL}exercise_videos/{name}" for name in file_names]
+    
+    paginator = Paginator(video_urls, 6)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
 
-    return render(request, 'exercises/video_gallery.html', {'video_urls': video_urls})
+    return render(request, 'exercises/video_gallery.html', {'page_obj': page_obj})

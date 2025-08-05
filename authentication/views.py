@@ -1,7 +1,6 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import render, redirect
 from authentication import forms
 from django.contrib.auth import login, logout
-from .forms import WeightUpdateForm
 
 def register(request):
     if request.method == 'POST':
@@ -23,16 +22,3 @@ def logout_view(request):
     logout(request)
     return redirect('/')  
 
-# Обновление веса 
-
-def update_weight(request):
-    user = request.user
-    if request.method == 'POST':
-        form = WeightUpdateForm(request.POST, instance=user)
-        if form.is_valid():
-            form.save()
-            return redirect('/')
-    else:
-        form = WeightUpdateForm(instance=user)
-
-    return render(request, 'account/update_weight.html', {'form': form})

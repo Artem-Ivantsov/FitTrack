@@ -45,9 +45,8 @@ INSTALLED_APPS = [
     'exercises',
     'user_profile',
     'food',
-    #'meal_calculator',
-    #'recipes',
-    #'my_dishes',
+    'weight',
+    
 ]
 
 MIDDLEWARE = [
@@ -144,3 +143,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 AUTH_USER_MODEL = 'authentication.CustomUser'
 
 LOGIN_REDIRECT_URL = '/'
+
+STRIPE_PUBLISHABLE_KEY = ''
+STRIPE_SECRET_KEY = ''
+STRIPE_API_VERSION = '2022-08-1'
+
+STRIPE_WEBHOOK_SECRET = ''

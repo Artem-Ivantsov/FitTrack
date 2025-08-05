@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="weight-container">
+    <h1>Отслеживание веса</h1>
+
+    <form method="POST" class="weight-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Добавить" class="add-button">
+    </form>
+
+    <div class="chart-wrapper">
+        <canvas id="weightChart"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const labels = {{ dates|safe }};
+    const data = {{ weights|safe }};
+
+    const ctx = document.getElementById('weightChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Вес (кг)',
+                data: data,
+                borderColor: 'rgba(0, 200, 83, 0.9)',
+                fill: false,
+                tension: 0.3
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+</script>
+
+{% endblock %}
