@@ -1,139 +1,139 @@
 [
   {
-    "name": "Steamed Chicken Breast with Broccoli",
+    "name": "Куриная грудка на пару с брокколи",
     "calories": 220,
     "protein": 35,
     "fat": 4,
     "carbs": 10
   },
   {
-    "name": "Egg White Omelette with Vegetables",
+    "name": "Омлет из яичных белков с овощами",
     "calories": 180,
     "protein": 28,
     "fat": 3,
     "carbs": 7
   },
   {
-    "name": "Buckwheat with Tuna",
+    "name": "Гречка с тунцом",
     "calories": 310,
     "protein": 32,
     "fat": 6,
     "carbs": 28
   },
   {
-    "name": "Baked Cod with Cauliflower",
+    "name": "Запечённая треска с цветной капустой",
     "calories": 250,
     "protein": 30,
     "fat": 5,
     "carbs": 10
   },
   {
-    "name": "Turkey with Quinoa and Spinach",
+    "name": "Индейка с киноа и шпинатом",
     "calories": 350,
     "protein": 40,
     "fat": 7,
     "carbs": 25
   },
   {
-    "name": "Chicken Salad with Greens",
+    "name": "Куриный салат с зеленью",
     "calories": 190,
     "protein": 27,
     "fat": 4,
     "carbs": 8
   },
   {
-    "name": "Baked Salmon with Green Beans",
+    "name": "Запечённый лосось с зелёной фасолью",
     "calories": 330,
     "protein": 36,
     "fat": 8,
     "carbs": 12
   },
   {
-    "name": "Oatmeal with Protein Powder",
+    "name": "Овсянка с протеином",
     "calories": 300,
     "protein": 30,
     "fat": 4,
     "carbs": 35
   },
   {
-    "name": "Grilled Chicken with Cucumber Salad",
+    "name": "Жареная курица с салатом из огурцов",
     "calories": 210,
     "protein": 34,
     "fat": 3,
     "carbs": 6
   },
   {
-    "name": "Cottage Cheese with Berries",
+    "name": "Творог с ягодами",
     "calories": 200,
     "protein": 22,
     "fat": 5,
     "carbs": 10
   },
   {
-    "name": "Lean Beef Stir Fry with Vegetables",
+    "name": "Обжаренная говядина с овощами",
     "calories": 340,
     "protein": 38,
     "fat": 9,
     "carbs": 15
   },
   {
-    "name": "Grilled Shrimp with Brown Rice",
+    "name": "Креветки на гриле с бурым рисом",
     "calories": 290,
     "protein": 32,
     "fat": 5,
     "carbs": 30
   },
   {
-    "name": "Lentil Soup with Chicken",
+    "name": "Чечевичный суп с курицей",
     "calories": 270,
     "protein": 29,
     "fat": 4,
     "carbs": 20
   },
   {
-    "name": "Turkey Meatballs with Zucchini",
+    "name": "Фрикадельки из индейки с цукини",
     "calories": 310,
     "protein": 34,
     "fat": 7,
     "carbs": 12
   },
   {
-    "name": "Salmon Quinoa Bowl",
+    "name": "Боул с лососем и киноа",
     "calories": 360,
     "protein": 33,
     "fat": 10,
     "carbs": 25
   },
   {
-    "name": "Tuna Salad with Olive Oil",
+    "name": "Салат с тунцом и оливковым маслом",
     "calories": 280,
     "protein": 30,
     "fat": 8,
     "carbs": 5
   },
   {
-    "name": "Grilled Chicken with Sweet Potato",
+    "name": "Курица на гриле с бататом",
     "calories": 330,
     "protein": 36,
     "fat": 6,
     "carbs": 28
   },
   {
-    "name": "Tofu with Stir Fried Vegetables",
+    "name": "Тофу с обжаренными овощами",
     "calories": 270,
     "protein": 24,
     "fat": 9,
     "carbs": 15
   },
   {
-    "name": "Egg and Avocado Toast",
+    "name": "Яйцо с тостом и авокадо",
     "calories": 310,
     "protein": 20,
     "fat": 15,
     "carbs": 25
   },
   {
-    "name": "Boiled Eggs with Spinach",
+    "name": "Варёные яйца со шпинатом",
     "calories": 250,
     "protein": 22,
     "fat": 10,

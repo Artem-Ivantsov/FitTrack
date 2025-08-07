@@ -212,23 +212,30 @@ input[type="submit"]:hover {
   color: #3498db;
 }
 
-/* ========== Help and Privacy ========== */
+/* ========== Help and Privacy and Settings========== */
 
 .help-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15vh 0;
   font-style: oblique;
+  max-width: 900px;
+  margin: 10rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
-
-
 
 .privacy-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-style: oblique;
+  
 }
 
 .privacy-container {
@@ -268,6 +275,23 @@ input[type="submit"]:hover {
   margin-bottom: 0.5rem;
 }
 
+.settings-container {
+  background-color: white;
+  max-width: 600px;
+  margin-top: 15vh;
+  margin-left: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: oblique;
+  padding: 2rem;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
 /* ========== Exercise ========== */
 
 .exercise-list {
@@ -277,7 +301,6 @@ input[type="submit"]:hover {
   justify-content: center;
   max-width: 1200px;
   margin: 12vh auto;
-  padding: 20px;
 }
 
 
@@ -351,4 +374,230 @@ input[type="submit"]:hover {
 .pagination .page-links .current {
     font-weight: bold;
     background-color: #f0f0f0;
+}
+
+/* ========== Food ========== */
+.food-recipes {
+    max-width: 800px;
+    margin: 14vh auto;
+    padding: 30px;
+    background-color: #ffffff; /* белый фон контейнера */
+    border: 2px solid #b7e4c7; /* мягкая зелёная рамка */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(46, 96, 71, 0.1);
+}
+
+.food-recipes h1 {
+    text-align: center;
+    color: #2e8b57; /* тёмный зелёный */
+    margin-bottom: 25px;
+}
+
+.food-recipes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.food-recipes li {
+    background-color: #d4f5e2; /* светло-зелёная подложка */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #81c784; /* акцентная зелёная полоса */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.food-recipes li:hover {
+    background-color: #c2ecd4;
+}
+
+.food-recipes a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #2e8b57; /* зелёная кнопка */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.food-recipes a:hover {
+    background-color: #276c46;
+}
+
+.food-menu {
+    max-width: 700px;
+    margin: 14vh auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #b2dfdb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(46, 96, 71, 0.1);
+    color: #2e6047;
+}
+
+.food-menu h2 {
+    text-align: center;
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+.food-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.food-menu li {
+    background-color: #e0f2f1;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-left: 5px solid #4caf50;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.food-menu li:hover {
+    background-color: #c8e6c9;
+}
+
+.food-menu form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.food-menu select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a5d6a7;
+    font-size: 16px;
+}
+
+.add-button {
+    background-color: #66bb6a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #4caf50;
+}
+
+.food-menu a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #2e7d32;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.food-menu a:hover {
+    background-color: #1b5e20;
+}
+
+/* ========== Change Username ========== */
+
+.change-username-container {
+    max-width: 600px;
+    margin: 15vh auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 2px solid #b7e4c7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
+    color: #2e8b57;
+    font-family: sans-serif;
+}
+
+.change-username-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e8b57;
+}
+
+.change-username-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.change-username-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #a5d6a7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.change-username-container button {
+    padding: 10px;
+    background-color: #66bb6a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.change-username-container button:hover {
+    background-color: #4caf50;
+}
+
+
+/* ========== Delete Account ========== */
+
+.delete-account-container {
+    max-width: 600px;
+    margin: 15vh auto;
+    padding: 30px;
+    background-color: #fff5f5;
+    border: 2px solid #f5c6cb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.1);
+    color: #c53030;
+    font-family: sans-serif;
+}
+
+.delete-account-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b71c1c;
+}
+
+.delete-account-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.delete-account-container form {
+    display: flex;
+    justify-content: center;
+}
+
+.delete-account-container button {
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-account-container button:hover {
+    background-color: #c62828;
 }

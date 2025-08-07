@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from authentication import forms
 from django.contrib.auth import login, logout
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 def register(request):
     if request.method == 'POST':
@@ -22,3 +24,22 @@ def logout_view(request):
     logout(request)
     return redirect('/')  
 
+def change_username(request):
+    if request.method == 'POST':
+        new_username = request.POST.get('username')
+        if new_username:
+            request.user.username = new_username
+            request.user.save()
+            messages.success(request, 'Имя пользователя успешно изменено.')
+            return redirect('settings')
+    return render(request, 'authentication/change_username.html')
+
+@login_required
+def delete_account(request):
+    if request.method == 'POST':
+        user = request.user
+        logout(request)
+        user.delete()
+        messages.success(request, 'Аккаунт успешно удалён.')
+        return redirect('/')
+    return render(request, 'authentication/delete_account.html')

@@ -3,18 +3,19 @@
 
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
-<div class="navbar">
-    <h2>Настройки аккаунтa</h2>
-    <p><a href="">asdsadsada</a></p>
-    <p><a href="">asdsadsada</a></p>
-    <p><a href="">asdsadsada</a></p>
-    <p><a href="">asdsadsada</a></p>
+<div class="settings-container  ">
+    <h2>Настройки аккаунта</h2>
+    <ul>
+        <li><a href="{% url 'change_username' %}">Смена имени пользователя</a></li>
+        <li><a href="{% url 'password_change' %}">Смена пароля</a></li>
+        <li><a href="{% url 'delete_account' %}">Удаление аккаунта</a></li>
+    </ul>
 
     <h2>Настройки приватности</h2>
-    <p><a href="">asdsadsada</a></p>
-    <p><a href="">asdsadsada</a></p>
-    <p><a href="">asdsadsada</a></p>
-    <p><a href="">asdsadsad</a></p>
+    <ul>
+        
+        <li><a href="{% url 'privacy_policy' %}">Политика конфиденциальности</a></li>
+    </ul>
 </div>
 {% endblock %}
 

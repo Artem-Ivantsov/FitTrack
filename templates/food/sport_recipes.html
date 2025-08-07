@@ -4,11 +4,8 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-<head>
-    <title>Спортивные рецепты</title>
-</head>
-<body>
-    <h1>Спортивные рецепты</h1>
+<div class="food-recipes">
+    <h1>Спортивные блюда</h1>
     <ul>
         {% for recipe in recipes %}
             <li>
@@ -21,7 +18,8 @@
         {% endfor %}
     </ul>
 
-<a href="/">Главная</a>
-</body>
+    <a href="/">Главная</a>
+</div>
+
 
 {% endblock %}

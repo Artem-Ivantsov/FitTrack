@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="change-username-container">
+  <h2>Смена имени пользователя</h2>
+  <form method="post">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Введите новое имя пользователя" required>
+    <button type="submit">Сохранить</button>
+  </form>
+</div>
+{% endblock %}
