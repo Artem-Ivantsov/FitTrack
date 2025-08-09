@@ -2,16 +2,12 @@
 {% load static %}
 
 {% block content %}
-<body class="">
-    <div class="">
-    <div class="">
+<div class="change-username-container">
         <h2>Login</h2>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit">Login</button>
-        </form>
-    </div>
-    </div>
-</body>
+        <button type="submit">Login</button>
+    </form>
+</div>
 {% endblock %}

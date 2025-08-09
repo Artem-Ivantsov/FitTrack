@@ -13,7 +13,7 @@ def register(request):
             custom_user.save()
 
             login(request, custom_user)
-            return redirect('main')  
+            return redirect('/')  
         
     else:
         custom_user_form = forms.CustomUserForm() 

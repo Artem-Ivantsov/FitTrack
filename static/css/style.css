@@ -5,9 +5,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: var(--bg-secondary);
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px var(--shadow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
 
 .menu a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-main);
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 8px;
@@ -24,13 +24,13 @@
 }
 
 .menu a:hover {
-  background-color: #ddd;
+  background-color: var(--bg-main);
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #00ff73;
+  color: var(--bg-subaccent);
   margin-right: 20px;
   font-family: sans-serif;
 }
@@ -40,7 +40,7 @@
   top: 60px; 
   left: 0;
   width: 100%;
-  background-color: #00dd63;
+  background-color: var(--bg-subaccent);
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@
 
 .second_menu a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--btn-text);
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 8px;
@@ -58,7 +58,7 @@
 }
 
 .second_menu a:hover {
-  background-color: #00cc6d;
+  background-color: var(--btn-hover-bg);
 }
 
 .submenu {
@@ -66,7 +66,7 @@
   top: 114px; 
   left: 0;
   width: 100%;
-  background-color: #00cc6d;
+  background-color: var(--btn-hover-bg);
   padding: 10px 20px;
   display: flex;
   justify-content: center;
@@ -76,7 +76,7 @@
 
 .submenu a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--btn-text);
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 8px;
@@ -84,7 +84,7 @@
 }
 
 .submenu a:hover {
-  background-color: #008c3a;
+  background-color: var(--bg-accent);
 }
 
 /* ========== Page Layout ========== */
@@ -94,9 +94,11 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #f8f9fa;
+
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-main);
+  color: var(--text-main);
 }
 
 .page-wrapper {
@@ -114,7 +116,7 @@ main {
 
 h1 {
   text-align: center;
-  color: #343a40;
+  color: var(--text-main);
 }
 
 .weight-container {
@@ -132,7 +134,7 @@ h1 {
 input[type="text"],
 input[type="number"] {
   padding: 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid var(--bg-accent);
   border-radius: 5px;
   font-size: 16px;
   width: 100%;
@@ -141,8 +143,8 @@ input[type="number"] {
 input[type="submit"],
 .add-button {
   padding: 6px 12px;
-  background-color: #00c853;
-  color: white;
+  background-color: var(--bg-subaccent);
+  color: var(--btn-text);
   font-weight: bold;
   border: none;
   border-radius: 6px;
@@ -153,7 +155,7 @@ input[type="submit"],
 
 .add-button:hover,
 input[type="submit"]:hover {
-  background-color: #009624;
+  background-color: var(--bg-accent);
 }
 
 .chart-wrapper {
@@ -166,7 +168,7 @@ input[type="submit"]:hover {
 
 .quote-block {
   font-style: italic;
-  color: #555;
+  color: var(--text-secondary);
   text-align: center;
   margin: 40px 0 10px;
 }
@@ -179,8 +181,8 @@ input[type="submit"]:hover {
 }
 
 .footer {
-  background-color: #008c3a;
-  color: white;
+  background-color: var(--bg-accent);
+  color: var(--btn-text);
   padding: 10px 0;
   text-align: center;
   font-size: 0.9rem;
@@ -203,7 +205,7 @@ input[type="submit"]:hover {
 }
 
 .footer-nav ul li a {
-  color: white;
+  color: var(--btn-text);;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -222,8 +224,8 @@ input[type="submit"]:hover {
   max-width: 900px;
   margin: 10rem auto;
   padding: 2rem;
-  background: #ffffff;
-  color: #333;
+  background: var(--bg-main);
+  color: var(--text-main);
   font-family: sans-serif;
   line-height: 1.6;
   border-radius: 8px;
@@ -242,8 +244,8 @@ input[type="submit"]:hover {
   max-width: 900px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #ffffff;
-  color: #333;
+  background: var(--bg-main);
+  color: var(--text-main);
   font-family: sans-serif;
   line-height: 1.6;
   border-radius: 8px;
@@ -251,13 +253,13 @@ input[type="submit"]:hover {
 }
 
 .privacy-container h1 {
-  color: #0e639c;
+  color: var(--bg-accent);
   margin-bottom: 1rem;
 }
 
 .privacy-container h2 {
   margin-top: 2rem;
-  color: #0e639c;
+  color: var(--bg-accent);
   font-size: 1.3rem;
 }
 
@@ -276,7 +278,7 @@ input[type="submit"]:hover {
 }
 
 .settings-container {
-  background-color: white;
+  background-color: var(--bg-main);
   max-width: 600px;
   margin-top: 15vh;
   margin-left: 65vh;
@@ -285,7 +287,7 @@ input[type="submit"]:hover {
   align-items: center;
   font-style: oblique;
   padding: 2rem;
-  color: #333;
+   color: var(--text-main);
   font-family: sans-serif;
   line-height: 1.6;
   border-radius: 8px;
@@ -305,11 +307,11 @@ input[type="submit"]:hover {
 
 
 .exercise-card {
-  background-color: white;
+  background-color: var(--bg-main);
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #02a124;
+  box-shadow: 0 2px 5px var(--shadow);
+  border-left: 5px solid var(--bg-subaccent);
   width: calc(33.333% - 20px);
   box-sizing: border-box;
 }
@@ -328,10 +330,10 @@ input[type="submit"]:hover {
 }
 
 .video-card {
-  width: calc(33.333% - 20px); /* 3 в ряд */
-  background-color: #fff;
+  width: calc(33.333% - 20px);
+  background-color: var(--bg-main);
   padding: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px var(--shadow);
   border-radius: 8px;
   margin: 5vh;
   box-sizing: border-box;
@@ -366,14 +368,15 @@ input[type="submit"]:hover {
     display: inline-block;
     margin: 0 5px;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--bg-accent);
     text-decoration: none;
-    color: #333;
+    color: var(--text-main);
 }
 
 .pagination .page-links .current {
     font-weight: bold;
-    background-color: #f0f0f0;
+    background-color: var(--bg-subaccent);
+    color: var(--btn-text);
 }
 
 /* ========== Food ========== */
@@ -381,15 +384,15 @@ input[type="submit"]:hover {
     max-width: 800px;
     margin: 14vh auto;
     padding: 30px;
-    background-color: #ffffff; /* белый фон контейнера */
-    border: 2px solid #b7e4c7; /* мягкая зелёная рамка */
+    background-color: var(--bg-main);
+    border: 2px solid var(--bg-subaccent);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(46, 96, 71, 0.1);
 }
 
 .food-recipes h1 {
     text-align: center;
-    color: #2e8b57; /* тёмный зелёный */
+    color: #2e8b57; 
     margin-bottom: 25px;
 }
 
@@ -399,10 +402,10 @@ input[type="submit"]:hover {
 }
 
 .food-recipes li {
-    background-color: #d4f5e2; /* светло-зелёная подложка */
+    background-color: #d4f5e2; 
     margin-bottom: 15px;
     padding: 15px;
-    border-left: 5px solid #81c784; /* акцентная зелёная полоса */
+    border-left: 5px solid #81c784; 
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -416,7 +419,7 @@ input[type="submit"]:hover {
     margin-top: 20px;
     padding: 10px 20px;
     color: #fff;
-    background-color: #2e8b57; /* зелёная кнопка */
+    background-color: #2e8b57;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -430,7 +433,7 @@ input[type="submit"]:hover {
     max-width: 700px;
     margin: 14vh auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: var(--bg-main);
     border: 2px solid #b2dfdb;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(46, 96, 71, 0.1);
@@ -496,15 +499,15 @@ input[type="submit"]:hover {
     margin-top: 10px;
     margin-right: 10px;
     padding: 10px 15px;
-    color: #fff;
-    background-color: #2e7d32;
+    color: var(--btn-text);
+    background-color: var(--btn-bg);
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .food-menu a:hover {
-    background-color: #1b5e20;
+    background-color: var(--btn-hover-bg);
 }
 
 /* ========== Change Username ========== */
@@ -513,11 +516,11 @@ input[type="submit"]:hover {
     max-width: 600px;
     margin: 15vh auto;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: var(--bg-main);
+    color: var(--text-main);
     border: 2px solid #b7e4c7;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);
-    color: #2e8b57;
     font-family: sans-serif;
 }
 
@@ -535,15 +538,15 @@ input[type="submit"]:hover {
 
 .change-username-container input[type="text"] {
     padding: 10px;
-    border: 1px solid #a5d6a7;
+    border: 1px solid var(--bg-accent);
     border-radius: 5px;
     font-size: 16px;
 }
 
 .change-username-container button {
     padding: 10px;
-    background-color: #66bb6a;
-    color: #fff;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -552,7 +555,7 @@ input[type="submit"]:hover {
 }
 
 .change-username-container button:hover {
-    background-color: #4caf50;
+    background-color: var(--btn-hover-bg);
 }
 
 
@@ -600,4 +603,23 @@ input[type="submit"]:hover {
 
 .delete-account-container button:hover {
     background-color: #c62828;
+}
+
+/* ========== Theme switch ========== */
+:root {
+  --bg-main: #fff;
+  --bg-secondary: #e8e8e8; 
+  --bg-accent: #006400; 
+  --bg-subaccent: #00a650; 
+  --btn-bg: #1b5e20; 
+  --btn-hover-bg: #128c19; 
+  --btn-text: #fff; 
+  --text-main: #222; 
+  --text-secondary: #555;
+  --text-accent: #006400; 
+  --link-color: #006400;
+  --link-hover: #004d00;
+  --card-bg: #f8f8f8; 
+  --shadow: rgba(0, 0, 0, 0.15);
+  --scrollbar-thumb: #a8a8a8;
 }
